@@ -1,0 +1,5 @@
+rabbitmq:
+  host: '::1'
+  port: 25672
+  username: 'tester'
+  password: 'testing'
