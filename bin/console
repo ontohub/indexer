@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'pry'
+
+require 'bundler/setup'
+require 'sneakers/runner'
+require 'indexer'
+require 'indexer/worker'
+
+Indexer::Application.boot
+
+# Start the REPL
+Pry.start
