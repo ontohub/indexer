@@ -7,7 +7,9 @@ class Listener
   def self.run
     %w(INT TERM).each do |signal|
       Signal.trap(signal) do
+        # :nocov:
         terminate
+        # :nocov:
       end
     end
 

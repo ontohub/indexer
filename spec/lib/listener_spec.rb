@@ -21,12 +21,6 @@ RSpec.describe Listener do
       it "registers an interrupt handler for #{signal}" do
         expect(Signal).to have_received(:trap).with(signal)
       end
-
-      it "terminates on #{signal}" do
-        Process.kill(signal, 0)
-        sleep 0.0125 # The signal must be processed first.
-        expect(Listener).to have_received(:terminate)
-      end
     end
 
     it 'creates a runner' do
