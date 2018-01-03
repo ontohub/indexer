@@ -23,5 +23,16 @@ module Indexer
   class Application < Rails::Application
     config.load_defaults 5.1
     config.api_only = true
+    config.autoload_paths << Rails.root.join('lib')
+
+    # Sequel 5 and sequel-rails always try connect to the database, even if it
+    # does not exist AND it should be created by the currently running rake
+    # task. This is a workaround:
+    tasks_without_connection = %w(db:drop db:create db:recreate)
+    # :nocov:
+    config.sequel.skip_connect =
+      defined?(Rake) &&
+      (Rake.application.top_level_tasks & tasks_without_connection).any?
+    # :nocov:
   end
 end
