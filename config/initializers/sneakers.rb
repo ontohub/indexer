@@ -7,7 +7,8 @@ else
   Sneakers.configure(connection: Bunny.new(username: Settings.rabbitmq.username,
                                            password: Settings.rabbitmq.password,
                                            host: Settings.rabbitmq.host,
-                                           port: Settings.rabbitmq.port))
+                                           port: Settings.rabbitmq.port),
+                     exchange: Settings.rabbitmq.exchange)
   Sneakers.logger.level = Logger::WARN
   # :nocov:
 end
