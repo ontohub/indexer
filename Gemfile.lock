@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ontohub/ontohub-models.git
-  revision: 81507f0cf1de24c156598dc07cf48f33172b300d
+  revision: ad3aefa189f993aa46fd76455a976a4ca6901518
   branch: master
   specs:
     ontohub-models (0.1.0)
@@ -9,7 +9,7 @@ GIT
       devise (>= 4.3, < 4.5)
       pry (~> 0.11.0)
       rails (~> 5.1.4)
-      sequel (>= 5.2, < 5.4)
+      sequel (>= 5.2, < 5.5)
       sequel-devise (~> 0.0.11)
       sequel-rails (~> 1.0.0)
       sequel_pg (~> 1.8.0)

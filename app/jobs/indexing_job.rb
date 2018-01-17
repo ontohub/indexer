@@ -4,9 +4,7 @@
 class IndexingJob < ApplicationJob
   queue_as "#{Settings.rabbitmq.prefix}_indexing"
 
-  def perform(hash)
-    $stdout.puts 'received message (hash):'
-    $stdout.puts hash.inspect
-    $stdout.puts ''
+  def perform(job)
+    "#{job['class']}Indexer".constantize.update(job['id'])
   end
 end
