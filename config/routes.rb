@@ -1,5 +1,4 @@
 # frozen_string_literal: true
 
-module Indexer
-  VERSION = '0.0.0'
+Rails.application.routes.draw do
 end

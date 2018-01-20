@@ -2,10 +2,18 @@ sudo: false
 dist: trusty
 
 language: ruby
-cache: bundler
+
+cache:
+  bundler: true
 
 rvm:
   - 2.5.0
+
+services:
+  - postgresql
+
+addons:
+  postgresql: '9.6'
 
 notifications:
   email: false
@@ -15,5 +23,8 @@ before_install:
   # rubygems
   - gem update --system
 
+before_script:
+  - RAILS_ENV=test bundle exec rails db:recreate
+
 script:
-  - bundle exec rspec --format progress
+  - bundle exec rspec --format documentation
