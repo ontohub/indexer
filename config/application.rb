@@ -21,24 +21,28 @@ Bundler.require(*Rails.groups)
 module Indexer
   # The main Application configuration
   class Application < Rails::Application
+    # Sequel 5 and sequel-rails always try connect to the database, even if it
+    # does not exist AND it should be created by the currently running rake
+    # task. This is a workaround:
+    tasks_without_connection = %w(db:drop db:create db:recreate)
+    # :nocov:
+    inside_database_rake_task =
+      defined?(Rake) &&
+      (Rake.application.top_level_tasks & tasks_without_connection).any?
+    # :nocov:
+
     config.load_defaults 5.1
     config.api_only = true
     config.autoload_paths << Rails.root.join('lib')
     config.autoload_paths << Rails.root.join('app/chewy')
     config.autoload_paths << Rails.root.join('app/indexers')
 
-    # Sequel 5 and sequel-rails always try connect to the database, even if it
-    # does not exist AND it should be created by the currently running rake
-    # task. This is a workaround:
-    tasks_without_connection = %w(db:drop db:create db:recreate)
     # :nocov:
-    config.sequel.skip_connect =
-      defined?(Rake) &&
-      (Rake.application.top_level_tasks & tasks_without_connection).any?
+    config.sequel.skip_connect = inside_database_rake_task
     # :nocov:
 
     config.after_initialize do
-      require 'index'
+      require 'index' unless inside_database_rake_task
     end
   end
 end
