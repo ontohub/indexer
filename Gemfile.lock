@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/ontohub/index.git
-  revision: db813f74a4abf031409abee43cbce9f54ea697da
-  branch: initialize_the_project
+  revision: bbcc04efed3ed19c233e6692a4b0e1ba96ef90dc
+  branch: master
   specs:
     index (0.0.0)
       awesome_print (~> 1.8.0)
