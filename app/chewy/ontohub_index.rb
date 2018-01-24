@@ -1,12 +1,12 @@
 class OntohubIndex < Chewy::Index
   define_type Repository do
-    field :slug
-    field :name
-    field :description
-    field :content_type
-    field :remote_address
-    field :remote_type
-    field :created_at
-    field :updated_at
+    field :slug, type: 'text'
+    field :name, type: 'text'
+    field :description, type: 'text'
+    field :content_type, type: 'text'
+    field :remote_address, type: 'text'
+    field :remote_type, type: 'text'
+    field :created_at, type: 'date'
+    field :updated_at, type: 'date'
   end
 end
