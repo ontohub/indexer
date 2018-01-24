@@ -12,6 +12,10 @@ gem 'rails', '~> 5.1.4'
 gem 'ontohub-models', github: 'ontohub/ontohub-models',
                       branch: 'master'
 
+gem 'index', github: 'ontohub/index',
+             branch: 'master',
+             require: false
+
 gem 'bootsnap', require: false
 gem 'config', '~> 1.6.1'
 

@@ -1,5 +1,5 @@
 class RepositoryIndexer
   def self.update(id)
-    OntohubIndex::Repository.import(id)
+    ::Index::RepositoryIndex::Repository.import(id)
   end
 end

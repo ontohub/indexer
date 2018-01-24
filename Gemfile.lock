@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/ontohub/index.git
+  revision: db813f74a4abf031409abee43cbce9f54ea697da
+  branch: initialize_the_project
+  specs:
+    index (0.0.0)
+      awesome_print (~> 1.8.0)
+      chewy (~> 0.10.1)
+      pry (~> 0.11.0)
+
+GIT
   remote: https://github.com/ontohub/ontohub-models.git
   revision: ad3aefa189f993aa46fd76455a976a4ca6901518
   branch: master
@@ -326,6 +336,7 @@ DEPENDENCIES
   factory_bot_rails (~> 4.8.2)
   faker (~> 1.8.7)
   fuubar (~> 2.3.0)
+  index!
   listen (>= 3.0.5, < 3.2)
   ontohub-models!
   pry (~> 0.11.3)

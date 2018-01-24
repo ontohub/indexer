@@ -38,7 +38,7 @@ module Indexer
     # :nocov:
 
     config.after_initialize do
-      #Index.create!
+      require 'index'
     end
   end
 end
