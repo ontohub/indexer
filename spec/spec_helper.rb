@@ -17,6 +17,7 @@ require 'ontohub-models/factories'
 require 'fuubar'
 require 'rspec'
 require 'rspec/rails'
+require 'chewy/rspec'
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 

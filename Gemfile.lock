@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ontohub/index.git
-  revision: bbcc04efed3ed19c233e6692a4b0e1ba96ef90dc
+  revision: aae9eaa9402d0a2f9d727d89f66d618b71c51e73
   branch: master
   specs:
     index (0.0.0)
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/ontohub/ontohub-models.git
-  revision: ad3aefa189f993aa46fd76455a976a4ca6901518
+  revision: c5dab513743a1b0b32c109fb7c57d3ef6c3b468f
   branch: master
   specs:
     ontohub-models (0.1.0)
@@ -23,7 +23,7 @@ GIT
       sequel-devise (~> 0.0.11)
       sequel-rails (~> 1.0.0)
       sequel_pg (~> 1.8.0)
-      sequel_postgresql_triggers (~> 1.3.0)
+      sequel_postgresql_triggers (>= 1.3, < 1.5)
 
 GEM
   remote: https://rubygems.org/
@@ -98,7 +98,7 @@ GEM
     database_cleaner (1.6.2)
     debug_inspector (0.0.3)
     deep_merge (1.1.1)
-    devise (4.4.0)
+    devise (4.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 5.2)
@@ -190,7 +190,7 @@ GEM
     parallel (1.12.1)
     parser (2.4.0.2)
       ast (~> 2.3)
-    pg (0.21.0)
+    pg (1.0.0)
     powerpack (0.1.1)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -270,7 +270,7 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.9.0)
     ruby_dep (1.5.0)
-    sequel (5.3.0)
+    sequel (5.4.0)
     sequel-devise (0.0.11)
       devise
       orm_adapter-sequel
@@ -282,7 +282,7 @@ GEM
     sequel_pg (1.8.1)
       pg (>= 0.18.0)
       sequel (>= 4.34.0)
-    sequel_postgresql_triggers (1.3.0)
+    sequel_postgresql_triggers (1.4.0)
       sequel
     serverengine (1.5.11)
       sigdump (~> 0.2.2)
