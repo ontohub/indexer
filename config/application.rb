@@ -34,7 +34,6 @@ module Indexer
     config.load_defaults 5.1
     config.api_only = true
     config.autoload_paths << Rails.root.join('lib')
-    config.autoload_paths << Rails.root.join('app/chewy')
     config.autoload_paths << Rails.root.join('app/indexers')
 
     # :nocov:
