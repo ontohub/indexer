@@ -11,6 +11,7 @@ rvm:
 
 services:
   - postgresql
+  - elasticsearch
 
 addons:
   postgresql: '9.6'
@@ -25,6 +26,7 @@ before_install:
 
 before_script:
   - RAILS_ENV=test bundle exec rails db:recreate
+  - ping_elasticsearch="curl localhost:9200"; while (! $ping_elasticsearch > /dev/null 2> /dev/null); do sleep 0.1; done
 
 script:
   - bundle exec rspec --format documentation
