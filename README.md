@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/ontohub/indexer.svg?branch=master)](https://travis-ci.org/ontohub/indexer)
 [![Coverage Status](https://coveralls.io/repos/github/ontohub/indexer/badge.svg?branch=master)](https://coveralls.io/github/ontohub/indexer?branch=master)
 [![Code Climate](https://codeclimate.com/github/ontohub/indexer/badges/gpa.svg)](https://codeclimate.com/github/ontohub/indexer)
-[![Dependency Status](https://gemnasium.com/badges/github.com/ontohub/indexer.svg)](https://gemnasium.com/github.com/ontohub/indexer)
 [![GitHub issues](https://img.shields.io/github/issues/ontohub/indexer.svg?maxAge=2592000)](https://waffle.io/ontohub/ontohub-backend?source=ontohub%2Findexer)
 
 # Indexer
