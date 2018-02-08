@@ -3,5 +3,4 @@ rabbitmq:
   port: 25672
   username: tester
   password: testing
-  prefix: indexer_test
-  exchange: indexer_test
+  virtual_host: indexer_test
