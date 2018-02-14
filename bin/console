@@ -1,2 +1,2 @@
 #!/bin/sh
-rails runner 'Pry.start'
+exec bundle exec rails application:console
