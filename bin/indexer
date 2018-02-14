@@ -1,2 +1,2 @@
 #!/bin/sh
-rails runner 'Listener.run'
+exec bundle exec rails application:run
