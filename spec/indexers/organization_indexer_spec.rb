@@ -24,4 +24,3 @@ RSpec.describe OrganizationIndexer do
     end
   end
 end
-

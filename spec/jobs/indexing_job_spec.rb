@@ -6,7 +6,7 @@ RSpec.describe IndexingJob, type: :job do
   let(:job) do
     {
       'class' => 'Repository',
-      'id' => 1
+      'id' => 1,
     }
   end
 
@@ -26,10 +26,14 @@ RSpec.describe IndexingJob, type: :job do
       it 'does not call the indexer' do
         begin
           IndexingJob.new.perform(job)
+          # rubocop:disable Lint/HandleExceptions
         rescue StandardError
+          # rubocop:enable Lint/HandleExceptions
+          # We test that the correct error is raised in the example
         end
         expect(RepositoryIndexer).not_to have_received(:update)
       end
+
       it 'raises an error' do
         expect { IndexingJob.new.perform(job) }.
           to raise_error(StandardError, /Invalid class argument: '.*'/)
@@ -40,7 +44,7 @@ RSpec.describe IndexingJob, type: :job do
       let(:job) do
         {
           'class' => '',
-          'id' => 1
+          'id' => 1,
         }
       end
       it_behaves_like 'a bad class parameter'
@@ -50,7 +54,7 @@ RSpec.describe IndexingJob, type: :job do
       let(:job) do
         {
           'class' => '_',
-          'id' => 1
+          'id' => 1,
         }
       end
       it_behaves_like 'a bad class parameter'
