@@ -4,6 +4,8 @@
 module Chewy
   class Type
     module Adapter
+      # The gem code qualifies this implicitly with :table__column. This is not
+      # allowed any more since Sequel 5.
       class Sequel < Orm
         private
 

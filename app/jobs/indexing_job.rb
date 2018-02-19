@@ -8,10 +8,9 @@ class IndexingJob < ApplicationJob
                       OrganizationIndexer].map(&:to_s)
   def perform(job)
     indexer_class = "#{job['class']}Indexer"
-    if ALLOWED_INDEXERS.include?(indexer_class)
-      indexer_class.constantize.update(job['id'])
-    else
+    unless ALLOWED_INDEXERS.include?(indexer_class)
       raise "Invalid class argument: '#{job['class']}'"
     end
+    indexer_class.constantize.update(job['id'])
   end
 end
