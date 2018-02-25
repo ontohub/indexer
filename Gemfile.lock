@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/ontohub/ontohub-models.git
-  revision: c5dab513743a1b0b32c109fb7c57d3ef6c3b468f
+  revision: 784aeaaddf425aac0e0bb711817923e33e9d900f
   branch: master
   specs:
     ontohub-models (0.1.0)
@@ -271,9 +271,10 @@ GEM
     ruby-progressbar (1.9.0)
     ruby_dep (1.5.0)
     sequel (5.4.0)
-    sequel-devise (0.0.11)
+    sequel-devise (0.0.12)
       devise
       orm_adapter-sequel
+      sequel (>= 3.11.0)
     sequel-rails (1.0.0)
       actionpack (>= 4.0.0)
       activemodel (>= 4.0.0)
