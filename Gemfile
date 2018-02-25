@@ -17,7 +17,7 @@ gem 'index', github: 'ontohub/index',
              require: false
 
 gem 'bootsnap', require: false
-gem 'config', '~> 1.6.1'
+gem 'config', '~> 1.7.0'
 
 # Use these gems for debugging
 gem 'awesome_print', '~> 1.8.0'
