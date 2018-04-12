@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/ontohub/ontohub-models.git
-  revision: 4bd2f96e780c574a6407a44a61e2510cdcfc0f93
+  revision: 987392508f04859d48e2492065c3de0bf582d3f5
   branch: master
   specs:
     ontohub-models (0.1.0)
@@ -270,7 +270,7 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.9.0)
     ruby_dep (1.5.0)
-    sequel (5.7.0)
+    sequel (5.7.1)
     sequel-devise (0.0.13)
       devise
       orm_adapter-sequel
