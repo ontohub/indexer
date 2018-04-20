@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/ontohub/ontohub-models.git
-  revision: de6335220623d2c7bf6175e02c872826de6d5cf4
+  revision: 05e63cdabca5ade7569d2a9fdd1211cc79cd8ed4
   branch: master
   specs:
     ontohub-models (0.1.0)
@@ -154,7 +154,7 @@ GEM
       railties (>= 3.0.0)
     faker (1.8.7)
       i18n (>= 0.7)
-    faraday (0.14.0)
+    faraday (0.15.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
     fuubar (2.3.1)
@@ -162,7 +162,7 @@ GEM
       ruby-progressbar (~> 1.4)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.0.0)
+    i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
     interception (0.5)
