@@ -7,7 +7,7 @@ cache:
   bundler: true
 
 rvm:
-  - 2.5.0
+  - 2.5.1
 
 services:
   - postgresql
@@ -20,9 +20,7 @@ notifications:
   email: false
 
 before_install:
-  # This is a workaround for a problem with a specific version of bundler and
-  # rubygems
-  - gem update --system
+  - gem install bundler
 
 before_script:
   - RAILS_ENV=test bundle exec rails db:recreate
