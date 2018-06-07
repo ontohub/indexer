@@ -29,7 +29,7 @@ gem 'pry-stack_explorer', '~> 0.4.9.2', platform: :mri
 
 # Sneakers depends on bunny and has the version requirement
 gem 'bunny'
-gem 'chewy', '~> 0.10.1'
+gem 'chewy', '~> 5.0.0'
 gem 'sneakers', '2.7.0'
 
 group :development do
