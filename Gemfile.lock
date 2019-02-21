@@ -10,14 +10,14 @@ GIT
 
 GIT
   remote: https://github.com/ontohub/ontohub-models.git
-  revision: 77d0989c074efa27a9f4139ca364b62da475034a
+  revision: 407a72a520b33df288f3b57de6ac579a93d4fd14
   branch: master
   specs:
     ontohub-models (0.1.0)
       awesome_print (~> 1.8.0)
       chewy (>= 0.10.1, < 5.1.0)
       devise (>= 4.3, < 4.7)
-      pry (~> 0.11.0)
+      pry (>= 0.11, < 0.13)
       rails (>= 5.1.4, < 5.3.0)
       sequel (>= 5.2, < 5.18)
       sequel-devise (~> 0.0.11)
@@ -327,8 +327,8 @@ GEM
       thread_safe (~> 0.1)
     unicode-display_width (1.4.1)
     url (0.3.2)
-    warden (1.2.7)
-      rack (>= 1.0)
+    warden (1.2.8)
+      rack (>= 2.0.6)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
