@@ -43,7 +43,7 @@ end
 
 group :test do
   gem 'bunny-mock', '~> 1.7.0'
-  gem 'codecov', '~> 0.1.10', require: false
+  gem 'codecov', '~> 0.1.14', require: false
   gem 'database_cleaner', '~> 1.7.0'
   gem 'factory_bot_rails', '~> 5.0.1'
   gem 'faker', '~> 1.8.7'
