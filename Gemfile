@@ -23,7 +23,7 @@ gem 'config', '~> 1.7.1'
 gem 'awesome_print', '~> 1.8.0'
 gem 'pry', '~> 0.11.3'
 gem 'pry-byebug', '~> 3.6.0', platform: :mri
-gem 'pry-rails', '~> 0.3.4'
+gem 'pry-rails', '~> 0.3.9'
 gem 'pry-rescue', '~> 1.4.4', platform: :mri
 gem 'pry-stack_explorer', '~> 0.4.9.3', platform: :mri
 
