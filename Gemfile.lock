@@ -79,8 +79,8 @@ GEM
     bootsnap (1.4.0)
       msgpack (~> 1.0)
     builder (3.2.3)
-    bunny (2.9.2)
-      amq-protocol (~> 2.3.0)
+    bunny (2.14.1)
+      amq-protocol (~> 2.3, >= 2.3.0)
     bunny-mock (1.7.0)
       bunny (>= 1.7)
     byebug (10.0.2)
@@ -297,7 +297,7 @@ GEM
       sequel (>= 4.38.0)
     sequel_postgresql_triggers (1.5.0)
       sequel
-    serverengine (2.0.6)
+    serverengine (2.0.7)
       sigdump (~> 0.2.2)
     sigdump (0.2.4)
     simplecov (0.16.1)
@@ -305,9 +305,10 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    sneakers (2.7.0)
-      bunny (~> 2.9.2)
+    sneakers (2.11.0)
+      bunny (~> 2.12)
       concurrent-ruby (~> 1.0)
+      rake
       serverengine (~> 2.0.5)
       thor
     spring (2.0.2)
@@ -361,7 +362,7 @@ DEPENDENCIES
   rspec (~> 3.7.0)
   rspec-rails (~> 3.7.2)
   rubocop (~> 0.65.0)
-  sneakers (= 2.7.0)
+  sneakers (= 2.11.0)
   spring
   spring-watcher-listen (~> 2.0.0)
 
