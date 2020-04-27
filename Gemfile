@@ -45,7 +45,7 @@ group :test do
   gem 'bunny-mock', '~> 1.7.0'
   gem 'codecov', '~> 0.1.14', require: false
   gem 'database_cleaner', '~> 1.7.0'
-  gem 'factory_bot_rails', '~> 5.0.1'
+  gem 'factory_bot_rails', '~> 5.2.0'
   gem 'faker', '~> 1.9.3'
   gem 'fuubar', '~> 2.3.2'
   gem 'rspec', '~> 3.7.0'
